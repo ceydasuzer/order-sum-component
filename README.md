@@ -1,6 +1,6 @@
-# Frontend Mentor - Huddle landing page with alternating feature blocks solution
+# Frontend Mentor - Order Summary Component Solution
 
-This is a solution to the [Huddle landing page with alternating feature blocks challenge on Frontend Mentor]
+This is a solution to the [Order Summary Component challenge on Frontend Mentor]
 
 ## Table of contents
 
