@@ -1,16 +1,9 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-size: 16px;
-    font-family: 'Red Hat Display', sans-serif;
-    /* border: 1px solid red; */
-    text-decoration: none;
-}
+@import url(./reset.css);
 
 :root {
     --pale_blue: hsl(225, 100%, 94%);
     --bright_blue: hsl(245, 75%, 52%);
+    --hover-color: hsl(245, 65%, 65%);
     --very_pale_blue: hsl(225, 100%, 98%);
     --des_blue: hsl(224, 23%, 55%);
     --dark_blue: hsl(223, 47%, 23%);
@@ -26,6 +19,8 @@ body {
     min-height: 100vh;
     place-content: center;
     text-shadow: 1px var(--des_blue);
+    font-family: 'Red Hat Display', sans-serif;
+    /* border: 1px solid red; */
 }
 
 .card {
@@ -95,15 +90,21 @@ p {
     flex: 15%;
     padding: 1.5em 1.2em;
     font-size: 0.9em;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     color: var(--bright_blue);
     font-weight: 500;
+}
+
+a:hover {
+    cursor: grab;
+    font-size: 1.1em;
+    color: var(--hover-color);
 }
 
 .card-footer button {
     background-color: var(--bright_blue);
     border-radius: 10px;
-    padding: 0.2em 2.1em;
+    padding: 0.4em 2.1em;
     width: 100%;
     margin: 1em 0;
     box-shadow: 1px 10px 10px var(--pale_blue)
@@ -112,14 +113,20 @@ p {
 .card-footer .footer-btn {
     display: inline-block;
     color: var(--very_pale_blue);
-    font-size: 0.8em;
+    font-size: 1em;
     font-weight: 700;
+}
+
+button:hover {
+    background-color: var(--hover-color);
+    border: none;
+    padding: 0.6em;
 }
 
 .card-footer a {
     color: var(--des_blue);
     font-weight: 700;
-    font-size: 0.8em;
+    font-size: 0.9em;
     display: inline-block;
     margin: 0.5em;
 }
